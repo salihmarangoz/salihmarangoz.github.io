@@ -9,7 +9,7 @@ name: Salih Marangoz
 description: Robotics Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://raw.githubusercontent.com/salihmarangoz/salihmarangoz.github.io/master/images/profile.jpg
 
 #
 # Flags below are optional
@@ -22,7 +22,7 @@ footer-links:
   facebook:
   flickr:
   github: salihmarangoz
-  instagram:
+  instagram: marangozsalih
   linkedin: salih-marangoz
   pinterest:
   rss: # just type anything here for a working RSS icon
