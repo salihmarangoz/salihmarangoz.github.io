@@ -1,15 +1,13 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+Hi! I am Salih Marangoz, was working as Robotics Specialists. I am passionately studying on simultaneous localization and mapping (SLAM) algorithms, autonomous navigation and deep neural networks.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+This is my portfolio website. You can find my publications, projects and resume using the navigation menu.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[salih285@gmail.com](mailto:salih285@gmail.com)
