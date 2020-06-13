@@ -1,18 +1,16 @@
----
-layout: default
----
+<html> 
+  <head> 
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("blog"); 
+    });
+    </script> 
+  </head> 
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <body> 
+     <div id="includedContent"></div>
+  </body> 
+</html>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<!-- this file loads blog page as default -->
