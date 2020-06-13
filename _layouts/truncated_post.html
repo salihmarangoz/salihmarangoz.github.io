@@ -4,23 +4,26 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="card">   
+    <article class="card">
       <div class="card-body">
-          <div class="card-title-2">
-              <h1>
-                  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              </h1>
-          </div>
-          <div class="card-exceprt">
-              <p>
-                  {{ post.excerpt }} 
-              </p>
-          </div>
-          <center><a class="btn" href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></center>
+        <div class="card-image">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <img src="{{ site.baseurl }}{{ post.feature-img }}" alt="Feature Image"/>
+          </a>
+        </div>
+
+        <div class="card-title">
+            <h1>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </h1>
+        </div>
+        <div class="card-exceprt">
+            <p>
+                {{ post.excerpt }} 
+            </p>
+        </div>
+        <!--<center><a class="btn" href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></center>-->
       </div>
     </article>
   {% endfor %}
 </div>
-
-
-<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>

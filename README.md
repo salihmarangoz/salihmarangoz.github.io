@@ -8,8 +8,12 @@ gitaddcommitpush() {
 }
 
 # sudo apt install docker.io; sudo groupadd docker;  sudo usermod -aG docker ${USER}
-alias jekyll_docker="docker run -p 8080:4000 -v $(pwd):/site bretfisher/jekyll-serve"
+alias jekyll_docker='docker run -p 8080:4000 -v $(pwd):/site bretfisher/jekyll-serve'
 ```
+
+
+
+------------------------------
 
 
 

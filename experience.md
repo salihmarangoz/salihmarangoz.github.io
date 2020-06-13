@@ -4,35 +4,26 @@ title: Experience
 permalink: /experience/
 ---
 
-<details>
+<details markdown="1">
+<summary><b>position @ firm</b> [month year - Present]</summary>
 
-<summary><b>position @ firm</b> [month 2019 - Present]</summary>
-
-  description
+  Job Description
 
   * item1
   * item2
   
-  **Technologies**: Python \| Scala \| GCP \| Tensorflow
-  
+  **Technologies**: Python \| Tensorflow
 </details>
 
 <br>
 
-<details><summary>This is cool stuff</summary>
+<details markdown="1">
+<summary><b>position @ firm</b> [month year - month year]</summary>
 
-# Title
+  Job Description
 
--   🐶
--   🐱
--   🦊
-
-| Name | Count |
-| ---- | ----- |
-| Dog  | 1     |
-| Cat  | 2     |
-
-```swift
-let foo = Bar()
-```
+  * item1
+  * item2
+  
+  **Technologies**: Python \| Tensorflow
 </details>

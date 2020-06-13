@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: <center>Example Post</center>
+title: <center>Example Post 2</center>
 comments: true
 mathjax: true
 feature-img: "/images/jekyll-logo.png"
