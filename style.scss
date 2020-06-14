@@ -332,13 +332,8 @@ footer {
   }
 }
 
-//.card:hover .card-image img {
-//  width: 100%;
-//  filter: 0;
-//  -webkit-filter: 0;
-//}
-
 .card-image {
+  text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -347,7 +342,7 @@ footer {
 .card-image img {
   margin-top: 1em;
   max-height: 300px;
-  width: 100%;
+  //width: 50%;
 }
 
 .card-body {
