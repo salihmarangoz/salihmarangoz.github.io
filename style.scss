@@ -299,7 +299,7 @@ footer {
 .repo-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .repo-card {
@@ -320,7 +320,7 @@ footer {
 //////////////////////////////////////////////////////////////////////////////////
 
 .card {
-  width: 100%;
+  width: 80%;
   margin: 0px auto;
   background-color: white;
   box-shadow: 0px 5px 20px #555;
@@ -342,7 +342,7 @@ footer {
 
 .card-image img {
   margin-top: 1em;
-  max-height: 200px;
+  max-height: 300px;
   width: 100%;
 }
 

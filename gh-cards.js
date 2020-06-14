@@ -52,7 +52,7 @@ let style = `
 img.gh {
   border-radius: 5px 5px 0 0;
   width: 100%;
-clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0% 95%, 0 0);
+//clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0% 95%, 0 0);
 }
 
 .container.gh {

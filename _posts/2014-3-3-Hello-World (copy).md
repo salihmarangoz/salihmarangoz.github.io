@@ -1,16 +1,13 @@
 ---
 layout: post
 type: blog
-title: <center>Example Post 2</center>
+title: <center>Example Post</center>
 comments: true
 mathjax: true
-feature-img: "/images/projects/ImageGenerationGeneticAlgorithm.png"
+feature-img: "/images/jekyll-logo.png"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula turpis in tellus molestie, et pharetra mauris suscipit. Sed euismod rutrum nisl, ut faucibus mauris facilisis ac. Suspendisse lacinia scelerisque augue, ut dictum tellus. Nunc et magna vel lectus vehicula mollis a vitae mauris. Cras ex odio, placerat laoreet neque nec, luctus vestibulum leo. In purus leo, tincidunt vitae ante non, iaculis semper ex. Duis est mi, porta pulvinar dolor eu, interdum hendrerit mi. In vitae arcu iaculis, volutpat dui id, bibendum velit. Nullam in blandit massa. Suspendisse sed molestie mauris. Aenean tristique, lacus sed laoreet imperdiet, ipsum ante pulvinar massa, ultricies posuere odio magna vitae quam. Pellentesque id accumsan nisl. Phasellus scelerisque dolor erat, id sodales ante vestibulum sit amet. Integer ipsum lacus, maximus at lorem at, tristique molestie orci. Nullam fermentum scelerisque dui, ut ultricies mi tempus ac. Nunc ultrices id sapien in auctor.
-
-$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
-
 
 Phasellus sit amet erat hendrerit, imperdiet mauris et, accumsan ante. Aliquam ultrices dapibus purus vel bibendum. Etiam ac lacus eget nisi sagittis accumsan. Sed ligula turpis, imperdiet sit amet aliquet ut, pulvinar in ex. Fusce nibh elit, ultricies in porta pellentesque, venenatis sit amet leo. Nulla in semper ligula. Fusce porttitor volutpat magna, sed tristique justo iaculis tempor. Phasellus ultricies suscipit magna, vitae bibendum diam finibus vel.
 
