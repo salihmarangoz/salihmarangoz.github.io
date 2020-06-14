@@ -47,7 +47,7 @@ permalink: /projects/
   <div class="gh-card gh-large" data-repo="salihmarangoz/WashingMachineArduinoTimer" data-image="../images/projects/WashingMachineArduinoTimer.png"></div>
 
 
-  <script src="../gh-cards.js"></script>
+  <script src="../javascripts/gh-cards.js"></script>
 </div>
 
 
