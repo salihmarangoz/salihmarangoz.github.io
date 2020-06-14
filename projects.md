@@ -32,11 +32,25 @@ permalink: /projects/
   </div> -->
 
   
-  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image="https://github.com/salihmarangoz/vl53l1x_scanner/blob/master/img/vl53l1x_scanner_bb.png"></div>
-  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole"></div>
-  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole"></div>
-  <script src="../gh-cards.js"></script>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image=" "></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image=" "></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image=" "></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image=" "></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image=" "></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image=" "></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image=" "></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image=" "></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/UbuntuTweaks"></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image="../vl53l1x_scanner_bb.png"></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/UbuntuTweaks"></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/DrawOnConsole" data-image="../vl53l1x_scanner_bb.png"></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/UbuntuTweaks"></div>
+  <div class="gh-card gh-medium" data-repo="salihmarangoz/deep_navigation"></div>
 
+
+
+
+  <script src="../gh-cards.js"></script>
 </div>
 
 

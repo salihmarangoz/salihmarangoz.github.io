@@ -37,16 +37,16 @@ let style = `
 }
 .gh-card {
     font-family: 'Arial';
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    max-width: 300px;
+    max-width: 350px;
     display: inline-block;
   margin: 8px;
   border-radius: 5px;
 }
 
 .gh-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 
 img.gh {
@@ -63,6 +63,7 @@ clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0% 95%, 0 0);
   line-height: 1.6;
   margin: 1em 0;
 }
+
 `;
 
 injectStylesheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -73,7 +74,7 @@ for(let card of cards) {
   let url = 'https://api.github.com/repos/' + repo;
   
   fetch(url, {method: 'GET'}).then(resp => {
-    return resp.json();
+     return resp.json();
   }).then(json => {
     
     card.innerHTML = `
@@ -81,15 +82,22 @@ for(let card of cards) {
       <div class="gh container">
         <h4 class="gh">
           <a class="gh" href="${json.html_url}">
-            ${json.full_name}
+            ${json.name}
           </a>
         </h4>
         <p class="gh">${json.description}</p>
-        <a class="gh" href="${json.html_url}/network">
-          <i class="fa fa-fw fa-code-fork" aria-hidden="true"></i> ${json.forks_count}
-        <a class="gh" href="${json.html_url}/stargazers">
-          <i class="fa fa-fw fa-star" aria-hidden="true"></i> ${json.stargazers_count}
+        <a class="gh" href="${json.html_url}">
+          <i class="fa fa-fw fa-code" aria-hidden="true"></i> ${json.language}
+          <i class="fa fa-fw" aria-hidden="true"></i>
         </a>
+        <a class="gh" href="${json.html_url}">
+          <i class="fa fa-fw fa-star" aria-hidden="true"></i> ${json.stargazers_count}
+          <i class="fa fa-fw" aria-hidden="true"></i>
+        </a>
+        <a class="gh" href="${json.html_url}">
+          <i class="fa fa-fw fa-code-fork" aria-hidden="true"></i> ${json.forks_count}
+        </a>
+
       </div>
     `;
     
