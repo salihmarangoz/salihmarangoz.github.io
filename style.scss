@@ -294,6 +294,30 @@ footer {
 
 
 //////////////////////////////////////////////////////////////////////////////////
+// GITHUB CARDS /////
+
+.repo-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.repo-card {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  margin: 5px 0 5px 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+//////////////////////////////////////////////////////////////////////////////////
 
 .card {
   width: 100%;
