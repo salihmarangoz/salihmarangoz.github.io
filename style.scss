@@ -62,7 +62,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+//  color: $gray;
 }
 
 p {
@@ -292,6 +292,46 @@ footer {
   text-align: center;
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////
+// POST ENTRY
+
+.entry{
+  text-align: justify;
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////
+// TABLE /////
+// https://divtable.com/table-styler/
+
+table {
+  border: 1px solid #FFFFFF;
+  background-color: #EEEEEE;
+  width: auto;
+  height: auto;
+  border-collapse: collapse;
+  margin: 20px 0 20px 0; // table margin!
+}
+table td, table th {
+  border: 1px solid #FFFFFF;
+  padding: 10px 10px;
+}
+table tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table thead {
+  background: #0B6FA4;
+}
+table thead th {
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+table tfoot {
+  font-weight: bold;
+  border-top: 3px solid #444444;
+}
 
 //////////////////////////////////////////////////////////////////////////////////
 // GITHUB CARDS /////

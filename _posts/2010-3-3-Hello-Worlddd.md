@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: <center>Example Post 2</center>
+title: Example Post 2
 comments: true
 mathjax: true
 feature-img: "/images/projects/ImageGenerationGeneticAlgorithm.png"
