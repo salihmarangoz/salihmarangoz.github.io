@@ -81,6 +81,10 @@ img.gh {
     height: 250px;
     overflow: hidden;
     position: relative;
+    
+  @include mobile {
+    height: 200px;
+  }
 }
 
 .container.gh {
