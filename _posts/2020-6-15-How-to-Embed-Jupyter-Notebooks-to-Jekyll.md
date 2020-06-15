@@ -1,8 +1,8 @@
 ---
 layout: post
 type: blog
-title: How to Embed Jupyter Notebooks with Jekyll
-feature-img: "/images/How-to-Embed-Jupyter-Notebooks-with-Jekyll/save-as-jupyter.png"
+title: How to Embed Jupyter Notebooks to Jekyll
+feature-img: "/images/How-to-Embed-Jupyter-Notebooks-to-Jekyll/save-as-jupyter.png"
 toc: true
 mathjax: true
 comments: true
@@ -31,7 +31,7 @@ Add these lines to `_layouts/post.html` before `<article>` section. You just nee
 
 As the first thing to do, save your notebook as `.html` file. In Jupyter, save the file with clicking; `File -> Download as -> HTML (.html)`. This file includes everything needed such as images, animations, figures, etc. Save this file into `notebooks` folder in your Jekyll project.
 
-<center><img src="../images/How-to-Embed-Jupyter-Notebooks-with-Jekyll/save-as-jupyter.png" alt="save-as-jupyter" style="zoom: 67%;" /></center>
+<center><img src="../images/How-to-Embed-Jupyter-Notebooks-to-Jekyll/save-as-jupyter.png" alt="save-as-jupyter" style="zoom: 67%;" /></center>
 
 
 
