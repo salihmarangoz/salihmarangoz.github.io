@@ -54,11 +54,10 @@ If you are running jekyll serve locally, it is possible to see these errors on y
 [2020-06-14 23:59:29] ERROR `/notebooks/custom.css' not found.
 ```
 
-To get rid of these warnings, do ctrl+f "custom.css" and remove the following lines in notebook html files:
+To get rid of these warnings, create a empty `custom.css` file in notebooks dir. Also if you want to remove width restriction of notebooks, copy the line below:
 
-```html
-<!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
+```css
+.container { width:100% !important; }
 ```
 
 
