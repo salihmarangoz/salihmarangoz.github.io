@@ -462,7 +462,9 @@ table tfoot {
   @include mobile {
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
   }
+
 }
 
 .repo-card {
