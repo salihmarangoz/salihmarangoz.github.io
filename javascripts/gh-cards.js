@@ -52,6 +52,10 @@ let style = `
     color: #606060;
   margin: 8px;
   border-radius: 5px;
+
+  @include mobile {
+    width: 90%;
+  }
 }
 
 .gh-card:hover {
