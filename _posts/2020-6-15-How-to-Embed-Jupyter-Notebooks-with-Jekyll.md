@@ -6,13 +6,14 @@ feature-img: "/images/How-to-Embed-Jupyter-Notebooks-with-Jekyll/save-as-jupyter
 toc: true
 mathjax: true
 comments: true
+published: true
 ---
 
-Jupyter Notebook is a good tool for studying and solving problems. In this tutorial, we are going to embed our Jupyter Notebooks into Jekyll posts easily. It is possible to keep original look of the notebook and embed multiple notebooks.
+Jupyter Notebook is a good tool for studying and solving problems. In this tutorial, we are going to embed our notebooks into Jekyll posts easily. It is possible to keep original look of the notebook and embed multiple notebooks.
 
 
 
-## Setup Layout
+## 1. Setup Layout
 
 Add these lines to `_layouts/post.html` before `<article>` section. You just need to do this configuration only once. 
 
@@ -26,7 +27,7 @@ Add these lines to `_layouts/post.html` before `<article>` section. You just nee
 
 
 
-## Save the Notebook as HTML File
+## 2. Save the Notebook as HTML File
 
 As the first thing to do, save your notebook as `.html` file. In Jupyter, save the file with clicking; `File -> Download as -> HTML (.html)`. This file includes everything needed such as images, animations, figures, etc. Save this file into `notebooks` folder in your Jekyll project.
 
@@ -34,7 +35,7 @@ As the first thing to do, save your notebook as `.html` file. In Jupyter, save t
 
 
 
-## Embed the HTML File
+## 3. Embed the HTML File
 
 Add these lines to `_posts/2020-1-1-Example-Post.md`, or where you want to embed the notebook:
 ```markdown
@@ -44,7 +45,25 @@ Add these lines to `_posts/2020-1-1-Example-Post.md`, or where you want to embed
 
 
 
-## Example Embedding
+## 4. Note About custom.css Errors
+
+If you are running jekyll serve locally, it is possible to see these errors on your terminal.
+
+```
+[2020-06-14 23:59:15] ERROR `/notebooks/custom.css' not found.
+[2020-06-14 23:59:29] ERROR `/notebooks/custom.css' not found.
+```
+
+To get rid of these warnings, do ctrl+f "custom.css" and remove the following lines in notebook html files:
+
+```html
+<!-- Custom stylesheet, it must be in the same directory as the html file -->
+<link rel="stylesheet" href="custom.css">
+```
+
+
+
+## 5. Example Embedding
 
 This section has an example embedding located below:
 
@@ -54,6 +73,6 @@ This section has an example embedding located below:
 
 
 
-## Reference
+## 6. Reference
 
 - [https://stackoverflow.com/questions/9975810/make-iframe-automatically-adjust-height-according-to-the-contents-without-using](https://stackoverflow.com/questions/9975810/make-iframe-automatically-adjust-height-according-to-the-contents-without-using)

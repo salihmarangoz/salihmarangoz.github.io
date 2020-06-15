@@ -41,6 +41,7 @@ let style = `
     transition: 0.3s;
     max-width: 350px;
     display: inline-block;
+    color: #606060;
   margin: 8px;
   border-radius: 5px;
 }
