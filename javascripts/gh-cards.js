@@ -1,3 +1,11 @@
+/*
+img.gh {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+//clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0% 95%, 0 0);
+}
+*/
+
 let cards = document.getElementsByClassName('gh-card');
 
 function injectStyle(str) {
@@ -52,8 +60,21 @@ let style = `
 
 img.gh {
   border-radius: 5px 5px 0 0;
-  width: 100%;
+    position: absolute;
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
 //clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0% 95%, 0 0);
+}
+
+.imgcontainer{
+    height: 250px;
+    overflow: hidden;
+    position: relative;
 }
 
 .container.gh {
@@ -79,7 +100,9 @@ for(let card of cards) {
   }).then(json => {
     
     card.innerHTML = `
-      <img class="gh" src="${card.getAttribute('data-image') || '../images/jekyll-logo.png' }">
+      <div class="imgcontainer">
+        <img class="gh" src="${card.getAttribute('data-image') || '../images/jekyll-logo.png' }">
+      </div>
       <div class="gh container">
         <h4 class="gh">
           <a class="gh" href="${json.html_url}">
