@@ -294,6 +294,17 @@ footer {
 
 
 //////////////////////////////////////////////////////////////////////////////////
+// TABLE OF CONTENTS
+
+.section-nav {
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 5px 50px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+}
+
+//////////////////////////////////////////////////////////////////////////////////
 // POST ENTRY
 
 .entry{
@@ -305,6 +316,36 @@ footer {
 // TABLE /////
 // https://divtable.com/table-styler/
 
+table {
+  margin: 15px 0;
+  padding: 0; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+      table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+margin-bottom: 0; }
+
+
+
+// BLUE THEMED TABLE
+/* 
 table {
   border: 1px solid #FFFFFF;
   background-color: #EEEEEE;
@@ -332,6 +373,7 @@ table tfoot {
   font-weight: bold;
   border-top: 3px solid #444444;
 }
+*/
 
 //////////////////////////////////////////////////////////////////////////////////
 // GITHUB CARDS /////

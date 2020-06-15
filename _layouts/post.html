@@ -2,10 +2,23 @@
 layout: default
 ---
 
+<!-- https://stackoverflow.com/questions/9975810/make-iframe-automatically-adjust-height-according-to-the-contents-without-using -->
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 50 + 'px';
+  }
+</script>
+
 <article class="post">
   <center><h1>{{ page.title }}</h1></center>
 
   <div class="entry">
+    {% if page.toc == true %}
+        <b>Table of Contents</b>
+        {% toc %}
+        <br>
+    {% endif %}
+
     {{ content }}
   </div>
 
