@@ -8,9 +8,10 @@
 $.fn.jqTOC = function(settings) {
 
    function tocToggleDisplay(e){
-		$('#'+settings.tocContainer+' .toc_content')[e.data.mode]();
+        $('#'+settings.tocContainer+' .toc_content')[e.data.mode]();
    }
    settings = $.extend({
+      tocFirstItem: 'not defined',
       tocWidth: 'auto',
       tocTitle: 'Table of Contents',
       tocStart: 1,
@@ -51,6 +52,14 @@ $.fn.jqTOC = function(settings) {
 	});
 	settings.tocStart=start;
 
+
+
+   // add page title to the list
+   t.append('<a id="toc_title_top" href="#">'+settings.tocFirstItem+'</a>')
+   $('#toc_title_top').bind('click', function(e){window.scrollTo(0,0);} );
+
+
+
    this.children().each(function(i) {
       headerLevel = this.nodeName.substr(1);
       if(
@@ -83,6 +92,7 @@ $.fn.jqTOC = function(settings) {
    if (settings.tocTopLink) {
       //$('.toc_top').bind('click', function(){window.scrollTo(0,0);});
    }
+
    return this;
 }
 })(jQuery);
