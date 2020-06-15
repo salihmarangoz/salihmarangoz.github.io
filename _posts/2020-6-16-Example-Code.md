@@ -5,7 +5,7 @@ title: Example Code
 #feature-img: "/images/projects/ImageGenerationGeneticAlgorithm.png"
 toc: true
 mathjax: true
-comments: true
+comments: false
 published: true
 ---
 
