@@ -1,10 +1,12 @@
 ---
 layout: post
 type: blog
-title: Example Markdown Features
-comments: true
+title: Example Post
+feature-img: "/images/projects/ImageGenerationGeneticAlgorithm.png"
+toc: true
 mathjax: true
-feature-img: "/images/projects/deep_navigation.png"
+comments: true
+published: true
 ---
 
 This post includes example post capabilities. Check out!
@@ -13,7 +15,6 @@ This post includes example post capabilities. Check out!
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
-
 
 ---
 __Advertisement :)__
@@ -74,7 +75,8 @@ _This is italic text_
 
 
 > Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
+> > ...by using additional greater-than signs right next to each other...
+> >
 > > > ...or with spaces between arrows.
 
 
@@ -253,7 +255,7 @@ Term 2 with *inline markup*
 :   Definition 2
 
         { some code, part of Definition 2 }
-
+    
     Third paragraph of definition 2.
 
 _Compact style:_

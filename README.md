@@ -1,4 +1,6 @@
-# Jekyll My Bashrc
+# Personal Configuration
+
+## .bashrc
 
 ```bash
 gitaddcommitpush() {
@@ -10,6 +12,14 @@ gitaddcommitpush() {
 # sudo apt install docker.io; sudo groupadd docker;  sudo usermod -aG docker ${USER}
 alias jekyll_docker='docker run -p 8080:4000 -v $(pwd):/site bretfisher/jekyll-serve'
 ```
+
+## Plugins & Addons
+
+- toc: https://github.com/toshimaru/jekyll-toc
+- gh-card: https://github.com/AranScope/github-cards
+- mathjax: https://zjuwhw.github.io/2017/06/04/MathJax.html
+
+
 
 
 
