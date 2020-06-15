@@ -296,8 +296,58 @@ footer {
 }
 
 
+
+
+
+
+
+
 //////////////////////////////////////////////////////////////////////////////////
-// TABLE OF CONTENTS
+// TABLE OF CONTENTS (jqtoc)
+
+#toc_container {
+   font: 12px/1.6em Verdana, Arial, Helvetica, sans-serif;
+   position:fixed;
+   left:0;
+   top:0em;
+   width:17em;
+   background: gray;
+}
+.toc_header {
+   background: #666;
+   color: #fff;
+   font-weight: bold;
+   cursor: pointer;
+   padding-left:10px;
+   padding-right:10px;
+}
+.toc_content {
+   border: 3px solid #666;
+   padding: 0 20px 5px 20px;
+   display: none;
+   overflow: auto;
+}
+.toc_content a {
+   display: list-item;
+   text-decoration: none;
+   color: #ccc;
+}
+.toc_content a:hover {
+   color: #fff;
+}
+.toc_content a.indent {
+   list-style-type: circle;
+}
+.toc_top {
+   float: right;
+}
+.toc_top a {
+   color: purple;
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////
+// TABLE OF CONTENTS (gem-toc)
 
 .section-nav {
   background-color: #fff;
@@ -406,6 +456,7 @@ table tfoot {
 }
 
 //////////////////////////////////////////////////////////////////////////////////
+// BLOG CARDS
 
 .card {
   width: 80%;
@@ -454,6 +505,15 @@ table tfoot {
 }
 
 //////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

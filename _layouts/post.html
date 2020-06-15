@@ -9,16 +9,27 @@ layout: default
   }
 </script>
 
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="../javascripts/jquery.jqTOC.js"></script>
+
 <article class="post">
   <center><h1>{{ page.title }}</h1></center>
 
-  <div class="entry">
-    {% if page.toc == true %}
+  
+  {% if page.toc == true %}
+    <!-- ALTERNATIVELY USING jqTOC. because github doesn't support this feature
         <b>Table of Contents</b>
         {% toc %}
         <br>
-    {% endif %}
+    -->
+    <script language="JavaScript" type="text/javascript">
+        $(document).ready(function(){
+          $('#entrypoint').jqTOC();
+        });
+    </script>
+  {% endif %}
 
+  <div class="entry" id="entrypoint">
     {{ content }}
   </div>
 
