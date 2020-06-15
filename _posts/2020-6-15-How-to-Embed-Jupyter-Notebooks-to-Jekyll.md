@@ -45,16 +45,9 @@ Add these lines to `_posts/2020-1-1-Example-Post.md`, or where you want to embed
 
 
 
-## 4. Note About custom.css Errors
+## 4. Removing Width Restriction of Embedded Notebook
 
-If you are running jekyll serve locally, it is possible to see these errors on your terminal.
-
-```
-[2020-06-14 23:59:15] ERROR `/notebooks/custom.css' not found.
-[2020-06-14 23:59:29] ERROR `/notebooks/custom.css' not found.
-```
-
-To get rid of these warnings, create a empty `custom.css` file in notebooks dir. Also if you want to remove width restriction of notebooks, copy the line below:
+Create a `custom.css` file in notebooks directory (right next to the other notebook html files) and paste the line below:
 
 ```css
 .container { width:100% !important; }

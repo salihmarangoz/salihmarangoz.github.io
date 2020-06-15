@@ -79,7 +79,7 @@ for(let card of cards) {
   }).then(json => {
     
     card.innerHTML = `
-      <img class="gh" src="${card.getAttribute('data-image') || json.owner.avatar_url}">
+      <img class="gh" src="${card.getAttribute('data-image') || '../images/jekyll-logo.png' }">
       <div class="gh container">
         <h4 class="gh">
           <a class="gh" href="${json.html_url}">
