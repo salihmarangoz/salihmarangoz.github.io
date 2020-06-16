@@ -44,14 +44,14 @@ let style = `
   zoom: 1;
 }
 .gh-card {
-    font-family: 'Arial';
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 360px;
-    display: inline-block;
-    color: #606060;
+  font-family: 'Arial';
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 360px;
+  display: inline-block;
+  color: #606060;
   margin: 8px;
-  border-radius: 5px;
+  border-radius: 5px;   // update one more value ->   .imgcontainer.border-radius
 
   @include mobile {
     width: 100%;
@@ -65,23 +65,23 @@ let style = `
 //}
 
 img.gh {
-  border-radius: 5px 5px 0 0;
-    position: absolute;
-    left: -1000%;
-    right: -1000%;
-    top: -1000%;
-    bottom: -1000%;
-    margin: auto;
-    min-height: 100%;
-    min-width: 100%;
+  position: absolute;
+  left: -1000%;
+  right: -1000%;
+  top: -1000%;
+  bottom: -1000%;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
 //clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0% 95%, 0 0);
 }
 
 .imgcontainer{
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-    
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px 5px 0 0;  // update one more value ->   .gh-card.border-radius
+  
   @include mobile {
     height: 150px;
   }
@@ -94,6 +94,7 @@ img.gh {
 .gh p {
   line-height: 1.6;
   margin: 1em 0;
+  text-align: justify;
 }
 
 `;
