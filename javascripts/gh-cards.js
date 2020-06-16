@@ -83,7 +83,7 @@ img.gh {
     position: relative;
     
   @include mobile {
-    height: 200px;
+    height: 150px;
   }
 }
 
