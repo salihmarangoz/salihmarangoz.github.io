@@ -54,15 +54,15 @@ let style = `
   border-radius: 5px;
 
   @include mobile {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.gh-card:hover {
-    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
-}
+//.gh-card:hover {
+//    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+//}
 
 img.gh {
   border-radius: 5px 5px 0 0;
