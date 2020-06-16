@@ -458,13 +458,7 @@ table tfoot {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-
-  @include mobile {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-  }
-
+  justify-content: center; // CENTER ITEMS
 }
 
 .repo-card {
