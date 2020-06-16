@@ -101,14 +101,8 @@ img.gh {
 injectStylesheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 injectStyle(style);
 
-for(let card of cards) {
-  let repo = card.getAttribute('data-repo');
-  let url = 'https://api.github.com/repos/' + repo;
-  
-  fetch(url, {method: 'GET'}).then(resp => {
-     return resp.json();
-  }).then(json => {
-    
+
+function send_card_inner_html(card, json) {
     card.innerHTML = `
       <div class="imgcontainer">
         <img class="gh" src="${card.getAttribute('data-image') || '../images/jekyll-logo.png' }">
@@ -134,8 +128,54 @@ for(let card of cards) {
 
       </div>
     `;
-    
-  }).catch(err => {
-    console.log(err);
-  });
+}
+
+
+for(let card of cards) {
+  let repo = card.getAttribute('data-repo');
+  let url = 'https://api.github.com/repos/' + repo;
+
+  let cookie_json = Cookies.get(repo);
+
+  if (cookie_json == null)
+  {
+    console.log("Fetch data from GitHub");
+
+    fetch(url, {method: 'GET'}).then(resp => {
+       return resp.json();
+    }).then(json => {
+
+    mini_json = {};
+    mini_json.html_url = json.html_url;
+    mini_json.name = json.name;
+    mini_json.language = json.language;
+    mini_json.stargazers_count = json.stargazers_count;
+    mini_json.forks_count = json.forks_count;
+    mini_json.description = json.description;
+
+    Cookies.set(repo, JSON.stringify(mini_json), { expires: 1 });
+
+    send_card_inner_html(card, json);
+      
+    }).catch(err => {
+      console.log(err);
+    });
+  }
+  else
+  {
+    console.log("Get data from cache");
+
+    json = JSON.parse(cookie_json);
+    mini_json = {};
+    mini_json.html_url = json.html_url;
+    mini_json.name = json.name;
+    mini_json.language = json.language;
+    mini_json.stargazers_count = json.stargazers_count;
+    mini_json.forks_count = json.forks_count;
+    mini_json.description = json.description;
+
+    send_card_inner_html(card, mini_json);
+  }
+
+
 }

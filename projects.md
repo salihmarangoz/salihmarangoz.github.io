@@ -55,7 +55,7 @@ permalink: /projects/
 
   <div class="gh-card gh-large" data-repo="salihmarangoz/ImageGenerationGeneticAlgorithm" data-image="../images/projects/ImageGenerationGeneticAlgorithm.png"></div>
 
-
+  <script src="../javascripts/js.cookie.min.js"></script>
   <script src="../javascripts/gh-cards.js"></script>
 </div>
 
