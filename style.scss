@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
   line-height: 1.7;
 //margin: 1em 0 15px;
-  margin: 0em 0 15px;
+  margin: 0em 0 5px;
   padding: 0;
 
   @include mobile {
@@ -529,9 +529,124 @@ table tfoot {
 }
 
 //////////////////////////////////////////////////////////////////////////////////
+// DETAILS BLOCK -> https://codepen.io/keithpickering/pen/PeBpwG
+//////////////////////////////////////////////////////////////////////////////////
+
+$spacing: 24px;
+$plus-size: 16px;
+$plus-thickness: 3px;
+$speed: 300ms;
+$easing: ease-in-out;
+$gray-dark: #546E7A;
+$gray: #CFD8DC;
+$gray-light: #ECEFF1;
+$primary: #00ACC1;
+
+/*
+html, body {
+  min-height: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+*/
+
+.wrapper {
+  //max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*
+  padding: $spacing*2;
+  @include mobile {
+    padding: 0;
+  }
+  */
+}
+
+.details-group {
+  border: 1px solid $gray;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.details {
+  overflow: hidden;
+  border-bottom: 1px solid $gray; // TODO BU KALDIRILABILIR
+  transition: height $speed $easing;
+  
+  &:last-child {
+    border-bottom: 0;
+  }
+  
+  &__summary,
+  &__content {
+    padding: $spacing;
+  }
+  
+  &__summary {
+    position: relative;
+    list-style: none; // Hide the marker (proper method)
+    padding-left: $spacing*2;
+    outline: 0;
+    cursor: pointer;
+    font-size: 1.4rem;
+    //font-family: Oswald;
+    //text-transform: uppercase;
+    transition: color $speed $easing;
+    
+    [open] > & {
+      color: $primary;
+    }
+    
+    // Hide the marker in Webkit
+    &::-webkit-details-marker {
+      display: none;
+    }
+    
+    // Our replacement marker
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+    }
+    
+    &:before {
+      left: $spacing/2 + $plus-size/2;
+      top: 50%;
+      height: $plus-thickness;
+      margin-top: -$plus-thickness/2;
+      width: $plus-size;
+      background: $primary;
+    }
+    
+    &:after {
+      left: $spacing/2 + $plus-size;
+      top: 50%;
+      height: $plus-size;
+      margin-top: -$plus-size/2;
+      width: $plus-thickness;
+      margin-left: -$plus-thickness/2;
+      background: $primary;
+      transition: all $speed $easing;
+    }
+    
+    [open] &:after {
+      opacity: 0;
+      transform: translateY(25%);
+    }
+  }
+  
+  &__content {
+    padding-top: 0;
+    padding-bottom: 50px;
+    //padding-left: $spacing*2;
+  }
+}
 
 
-
+//////////////////////////////////////////////////////////////////////////////////
 
 
 
