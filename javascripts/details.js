@@ -102,7 +102,7 @@ class Details {
   }
 }
 
-window.addEventListener('load', function () {
+// window.addEventListener('load', function () {
 (() => {
   const els = document.getElementsByClassName("details-group");
   
@@ -113,4 +113,4 @@ window.addEventListener('load', function () {
     });
   }
 })();
-})
+// })

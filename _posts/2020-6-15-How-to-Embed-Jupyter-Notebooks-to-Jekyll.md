@@ -39,7 +39,6 @@ As the first thing to do, save your notebook as `.html` file. In Jupyter, save t
 
 Add these lines to `_posts/2020-1-1-Example-Post.md`, or where you want to embed the notebook:
 ```markdown
-<br>
 <iframe src="../notebooks/example_notebook.html" width="100%" height="100%" scrolling="no" onload="resizeIframe(this)"></iframe>
 ```
 
@@ -58,8 +57,6 @@ Create a `custom.css` file in notebooks directory (right next to the other noteb
 ## 5. Example Embedding
 
 This section has an example embedding located below:
-
-<br>
 
 <iframe src="../notebooks/example_notebook.html" width="100%" height="100%" scrolling="no" onload="resizeIframe(this)"></iframe>
 

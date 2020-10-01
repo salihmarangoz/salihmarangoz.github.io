@@ -21,7 +21,7 @@ THIS PAGE IS UNDER CONSTRUCTION!
       </div>
     </details>
     <!-- DETAIL -->
-    <details class="details">
+    <details class="details" open="">
       <summary class="details__summary">
         My Skills
       </summary>
@@ -30,7 +30,7 @@ THIS PAGE IS UNDER CONSTRUCTION!
       </div>
     </details>
     <!-- DETAIL -->
-    <details class="details">
+    <details class="details" open="">
       <summary class="details__summary">
         Awards
       </summary>
@@ -39,7 +39,7 @@ THIS PAGE IS UNDER CONSTRUCTION!
       </div>
     </details>
     <!-- DETAIL -->
-    <details class="details">
+    <details class="details" open="">
       <summary class="details__summary">
         Hobbies
       </summary>
