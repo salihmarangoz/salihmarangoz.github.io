@@ -44,12 +44,48 @@ Add these lines to `_posts/2020-1-1-Example-Post.md`, or where you want to embed
 
 
 
-## 4. Removing Width Restriction of Embedded Notebook
+## 4. Custom CSS Style for the Embedded Content
 
 Create a `custom.css` file in notebooks directory (right next to the other notebook html files) and paste the line below:
 
 ```css
+/* FILL THE SCREEN */
 .container { width:100% !important; }
+
+/* REDUCE SHADOW EFFECT */
+@media not print {
+  #notebook-container {
+    padding: 0px;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(87, 87, 87, 0.2);
+    box-shadow: 0px 0px 2px 2px rgba(87, 87, 87, 0.2);
+  }
+}
+
+/* REMOVE EXTRA PADDING AT THE TOP */
+div#notebook {
+  padding-top: 0px;
+}
+
+/* HIDE input[xxx]: TEXT AND REMOVE THE PADDING ON THE LEFT */
+/*
+div.input_prompt {
+  display: none;
+}
+.prompt {
+  min-width: 0ex;
+  padding: 0ex;
+}
+*/
+/* OR LESSEN PADDING ON THE LEFT */
+.prompt {
+  min-width: 10ex;
+  padding: 1ex;
+}
+
+/* REDUCE BODY PADDING */
+body {
+  padding: 3px;
+}
 ```
 
 

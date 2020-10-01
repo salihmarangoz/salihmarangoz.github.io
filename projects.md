@@ -39,11 +39,10 @@ permalink: /projects/
 
   <div class="gh-card gh-large" data-repo="salihmarangoz/MachineLearningNotebooks"></div>
 
-
 <!-- Others -->
   <div class="gh-card gh-large" data-repo="salihmarangoz/All-in-One-Installer" data-image="../images/projects/All-in-One-Installer.png"></div>
 
-  <div class="gh-card gh-large" data-repo="salihmarangoz/UbuntuTweaks"></div>
+  <div class="gh-card gh-large" data-repo="salihmarangoz/UbuntuTweaks" data-language="Markdown"></div>
 
   <div class="gh-card gh-large" data-repo="salihmarangoz/RobotMappingCourse" data-image="../images/projects/RobotMappingCourse.gif"></div>
 
@@ -54,6 +53,9 @@ permalink: /projects/
   <div class="gh-card gh-large" data-repo="salihmarangoz/PathPlanningGeneticAlgorithm" data-image="../images/projects/PathPlanningGeneticAlgorithm.png"></div>
 
   <div class="gh-card gh-large" data-repo="salihmarangoz/ImageGenerationGeneticAlgorithm" data-image="../images/projects/ImageGenerationGeneticAlgorithm.png"></div>
+
+
+
 
   <script src="../javascripts/js.cookie.min.js"></script>
   <script src="../javascripts/gh-cards.js"></script>

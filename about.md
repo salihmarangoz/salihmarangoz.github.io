@@ -4,8 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-THIS PAGE IS UNDER CONSTRUCTION!
-
 <div class="wrapper">
   <section class="details-group">
     <!-- DETAIL -->

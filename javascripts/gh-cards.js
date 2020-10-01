@@ -109,7 +109,19 @@ injectStylesheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-aw
 injectStyle(style);
 
 
-function send_card_inner_html(card, json) {
+function send_card_inner_html(card, json, title, description, language) {
+    if (description==null){
+      description=json.description;
+    }
+
+    if (title==null){
+      title=json.name;
+    }
+
+    if (language==null){
+      language=json.language;
+    }
+
     card.innerHTML = `
       <div class="imgcontainer">
         <img class="gh" src="${card.getAttribute('data-image') || '../images/jekyll-logo.png' }">
@@ -117,14 +129,14 @@ function send_card_inner_html(card, json) {
       <div class="gh container">
         <h4 class="gh">
           <a class="gh" href="${json.html_url}">
-            ${json.name}
+            ${title}
           </a>
         </h4>
-        <p class="gh">${json.description}</p>
+        <p class="gh">${description}</p>
 
         <div class="gh-extra">
           <a class="gh" href="${json.html_url}">
-            <i class="fa fa-fw fa-code" aria-hidden="true"></i> ${json.language}
+            <i class="fa fa-fw fa-code" aria-hidden="true"></i> ${language}
             <i class="fa fa-fw" aria-hidden="true"></i>
           </a>
           <a class="gh" href="${json.html_url}">
@@ -143,6 +155,9 @@ function send_card_inner_html(card, json) {
 
 for(let card of cards) {
   let repo = card.getAttribute('data-repo');
+  let description = card.getAttribute('data-description');
+  let title = card.getAttribute('data-title');
+  let language = card.getAttribute('data-language');
   let url = 'https://api.github.com/repos/' + repo;
 
   let cookie_json = Cookies.get(repo);
@@ -165,7 +180,7 @@ for(let card of cards) {
 
     Cookies.set(repo, JSON.stringify(mini_json), { expires: 1 });
 
-    send_card_inner_html(card, json);
+    send_card_inner_html(card, mini_json, title, description, language);
       
     }).catch(err => {
       console.log(err);
@@ -184,7 +199,7 @@ for(let card of cards) {
     mini_json.forks_count = json.forks_count;
     mini_json.description = json.description;
 
-    send_card_inner_html(card, mini_json);
+    send_card_inner_html(card, mini_json, title, description, language);
   }
 
 
