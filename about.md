@@ -4,9 +4,17 @@ title: About Me
 permalink: /about/
 ---
 
+<p><img class="profile2-pic" src="../images/profile2.jpg" alt="profile2"></p>
+<h2>Hello! I am Salih Marangoz,</h2>
+<p align="justify">I am passionately studying on simultaneous localization and mapping (SLAM) algorithms, autonomous navigation and deep neural networks. This is my portfolio website. You can find my blog, publications, projects and CV/resume using the navigation menu.</p>
+<br>
+<h2>Contact Me</h2><a href="javascript:linkTo_UnCryptMailto('nbjmup;tbmji396Ahnbjm/dpn');"><img class="img" src="../images/eposta.png" width="200" alt="eposta"></a>
+
+
+<!--
 <div class="wrapper">
   <section class="details-group">
-    <!-- DETAIL -->
+
     <details class="details" open=""> 
       <summary class="details__summary">
         About Me
@@ -18,7 +26,7 @@ permalink: /about/
         <h2>Contact Me</h2><a href="javascript:linkTo_UnCryptMailto('nbjmup;tbmji396Ahnbjm/dpn');"><img class="img" src="../images/eposta.png" width="200" alt="eposta"></a>
       </div>
     </details>
-    <!-- DETAIL -->
+
     <details class="details" open="">
       <summary class="details__summary">
         My Skills
@@ -27,7 +35,7 @@ permalink: /about/
         <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat diam ultrices consequat suscipit. Pellentesque at diam a purus tincidunt dapibus at ac ante. Maecenas congue, orci sit amet consectetur tempus, massa neque feugiat lacus, in sodales felis ante nec dolor. Aenean lacinia sapien ac massa semper mollis. Proin laoreet lorem vulputate, porttitor.</p>
       </div>
     </details>
-    <!-- DETAIL -->
+
     <details class="details" open="">
       <summary class="details__summary">
         Awards
@@ -36,7 +44,7 @@ permalink: /about/
         <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat diam ultrices consequat suscipit. Pellentesque at diam a purus tincidunt dapibus at ac ante. Maecenas congue, orci sit amet consectetur tempus, massa neque feugiat lacus, in sodales felis ante nec dolor. Aenean lacinia sapien ac massa semper mollis. Proin laoreet lorem vulputate, porttitor.</p>
       </div>
     </details>
-    <!-- DETAIL -->
+
     <details class="details" open="">
       <summary class="details__summary">
         Hobbies
@@ -47,6 +55,7 @@ permalink: /about/
     </details>
   </section>
 </div>
+-->
 
 <!--
 <center>
