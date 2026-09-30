@@ -1,0 +1,29 @@
+Sitemap: https://salihmarangoz.github.io/sitemap.xml
+
+# Whitelist
+User-agent: Googlebot
+Disallow:
+
+# Blacklist
+User-agent: *
+Disallow: /
+
+# Old list
+User-agent: Baiduspider
+Disallow: /
+User-agent: Baiduspider-video
+Disallow: /
+User-agent: Baiduspider-image
+Disallow: /
+User-agent: Yandex
+Disallow: /
+User-agent: ia_archiver
+Disallow: /
+User-agent: archive.org_bot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+User-Agent: PerplexityBot
+Disallow: /
